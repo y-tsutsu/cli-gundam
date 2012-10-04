@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A757059B-4A6E-46C2-972A-716DA89A90A9}</ProjectGuid>
+    <RootNamespace>Anaheim</RootNamespace>
+    <Keyword>ManagedCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\;.\.\;.\Class;.\Class\TcpSocket;.\Class\UdpSocket;.\Class\Tetris;.\Class\Tetris\Model;.\Class\Tetris\View;.\Class\Tetris\Controller</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>User32.lib;winmm.lib</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>true</AssemblyDebug>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\;.\.\;.\Class;.\Class\TcpSocket;.\Class\UdpSocket;.\Class\Tetris;.\Class\Tetris\Model;.\Class\Tetris\View;.\Class\Tetris\Controller</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>User32.lib;winmm.lib</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <TargetMachine>MachineX86</TargetMachine>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Data">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Xml">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="Microsoft.DirectX, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.DirectSound, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="IWshRuntimeLibrary.1.0.dll">
+      <Guid>f935dc20-1cf0-11d0-adb9-00c04fd58a0b</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>false</Isolated>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="Class\FtpClient.cpp" />
+    <ClCompile Include="Class\IniFile.cpp" />
+    <ClCompile Include="Class\MenuPair.cpp" />
+    <ClCompile Include="Class\ShortcutFile.cpp" />
+    <ClCompile Include="Stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Class\WavPlayer.cpp" />
+    <ClCompile Include="Class\WavPlayerDX.cpp" />
+    <ClCompile Include="Class\Window.cpp" />
+    <ClCompile Include="Class\UdpSocket\UdpClientSocket.cpp" />
+    <ClCompile Include="Class\UdpSocket\UdpEventArgs.cpp" />
+    <ClCompile Include="Class\Tetris\TetrisFieldEventArgs.cpp" />
+    <ClCompile Include="Class\Tetris\TetrisPackage.cpp" />
+    <ClCompile Include="Class\Tetris\TetrisRemoteEventArgs.cpp" />
+    <ClCompile Include="Class\Tetris\TetrisRemotePackage.cpp" />
+    <ClCompile Include="Class\Tetris\TetrisScoreEventArgs.cpp" />
+    <ClCompile Include="Class\Tetris\Model\TetrisField.cpp" />
+    <ClCompile Include="Class\Tetris\Model\TetrisMino.cpp" />
+    <ClCompile Include="Class\Tetris\Model\TetrisModel.cpp" />
+    <ClCompile Include="Class\Tetris\Model\TetrisRemoting.cpp" />
+    <ClCompile Include="Class\Tetris\Model\TetrisScore.cpp" />
+    <ClCompile Include="Class\Tetris\View\TetrisDrawAPI.cpp" />
+    <ClCompile Include="Class\Tetris\View\TetrisDrawing.cpp" />
+    <ClCompile Include="Class\Tetris\View\TetrisSound.cpp" />
+    <ClCompile Include="Class\Tetris\View\TetrisView.cpp" />
+    <ClCompile Include="Class\Tetris\Controller\TetrisController.cpp" />
+    <ClCompile Include="Class\Tetris\Controller\TetrisKey.cpp" />
+    <ClCompile Include="Class\TcpSocket\TcpAcceptWorkerArgs.cpp" />
+    <ClCompile Include="Class\TcpSocket\TcpClientSocket.cpp" />
+    <ClCompile Include="Class\TcpSocket\TcpEventArgs.cpp" />
+    <ClCompile Include="Class\TcpSocket\TcpServerSocket.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Class\FtpClient.h" />
+    <ClInclude Include="Class\IniFile.h" />
+    <ClInclude Include="Class\Tetris\Model\ISerializable.h" />
+    <ClInclude Include="Class\MenuPair.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Class\ShortcutFile.h" />
+    <ClInclude Include="Stdafx.h" />
+    <ClInclude Include="Class\WavPlayer.h" />
+    <ClInclude Include="Class\WavPlayerDX.h" />
+    <ClInclude Include="Class\Window.h" />
+    <ClInclude Include="Class\UdpSocket\UdpClientSocket.h" />
+    <ClInclude Include="Class\UdpSocket\UdpEventArgs.h" />
+    <ClInclude Include="Class\Tetris\TetrisFieldEventArgs.h" />
+    <ClInclude Include="Class\Tetris\TetrisPackage.h" />
+    <ClInclude Include="Class\Tetris\TetrisRemoteEventArgs.h" />
+    <ClInclude Include="Class\Tetris\TetrisRemotePackage.h" />
+    <ClInclude Include="Class\Tetris\TetrisScoreEventArgs.h" />
+    <ClInclude Include="Class\Tetris\Model\TetrisField.h" />
+    <ClInclude Include="Class\Tetris\Model\TetrisMino.h" />
+    <ClInclude Include="Class\Tetris\Model\TetrisModel.h" />
+    <ClInclude Include="Class\Tetris\Model\TetrisRemoting.h" />
+    <ClInclude Include="Class\Tetris\Model\TetrisScore.h" />
+    <ClInclude Include="Class\Tetris\View\TetrisDrawAPI.h" />
+    <ClInclude Include="Class\Tetris\View\TetrisDrawing.h" />
+    <ClInclude Include="Class\Tetris\View\TetrisSound.h" />
+    <ClInclude Include="Class\Tetris\View\TetrisView.h" />
+    <ClInclude Include="Class\Tetris\Controller\TetrisController.h" />
+    <ClInclude Include="Class\Tetris\Controller\TetrisKey.h" />
+    <ClInclude Include="Class\TcpSocket\TcpAcceptWorkerArgs.h" />
+    <ClInclude Include="Class\TcpSocket\TcpClientSocket.h" />
+    <ClInclude Include="Class\TcpSocket\TcpEventArgs.h" />
+    <ClInclude Include="Class\TcpSocket\TcpServerSocket.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Anaheim.resX" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="app.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

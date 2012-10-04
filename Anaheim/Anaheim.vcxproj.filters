@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\UdpSocket">
+      <UniqueIdentifier>{760a91b9-8745-42c3-bc17-de05059cc895}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Tetris">
+      <UniqueIdentifier>{ca78067f-c8bf-4bcf-b7a7-2b39ab23bf7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Tetris\Model">
+      <UniqueIdentifier>{07406599-4a42-46a5-95a9-1c19f1c4306e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Tetris\View">
+      <UniqueIdentifier>{6718faf4-e6ba-4a91-847a-c746492ee2a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Tetris\Controller">
+      <UniqueIdentifier>{faeab8ec-ee01-45a9-890d-ebcfd5c17fd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\TcpSocket">
+      <UniqueIdentifier>{b47a2e41-e58b-490e-a33c-49834a80f9a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\UdpSocket">
+      <UniqueIdentifier>{b03e2542-fbed-4ced-ac1f-06e058490400}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Tetris">
+      <UniqueIdentifier>{7feaa00d-1617-4684-bbf4-2d2396e12ca7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Tetris\Model">
+      <UniqueIdentifier>{8f92c331-bc59-4b67-bc62-0ca05bcc55df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Tetris\View">
+      <UniqueIdentifier>{54f99cc3-7b4d-4e89-8e38-aaba0b5531db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Tetris\Controller">
+      <UniqueIdentifier>{206428b3-d8c4-47cf-92d6-0d6cfeb6f54d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\TcpSocket">
+      <UniqueIdentifier>{f0aa2ae7-cc52-4c8a-a677-703d89649e3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AssemblyInfo.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\FtpClient.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\IniFile.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\MenuPair.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\ShortcutFile.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Stdafx.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\WavPlayer.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\WavPlayerDX.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Window.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\UdpSocket\UdpClientSocket.cpp">
+      <Filter>ソース ファイル\UdpSocket</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\UdpSocket\UdpEventArgs.cpp">
+      <Filter>ソース ファイル\UdpSocket</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Tetris\TetrisFieldEventArgs.cpp">
+      <Filter>ソース ファイル\Tetris</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Tetris\TetrisPackage.cpp">
+      <Filter>ソース ファイル\Tetris</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Tetris\TetrisRemoteEventArgs.cpp">
+      <Filter>ソース ファイル\Tetris</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Tetris\TetrisRemotePackage.cpp">
+      <Filter>ソース ファイル\Tetris</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Tetris\TetrisScoreEventArgs.cpp">
+      <Filter>ソース ファイル\Tetris</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Tetris\Model\TetrisField.cpp">
+      <Filter>ソース ファイル\Tetris\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Tetris\Model\TetrisMino.cpp">
+      <Filter>ソース ファイル\Tetris\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Tetris\Model\TetrisModel.cpp">
+      <Filter>ソース ファイル\Tetris\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Tetris\Model\TetrisRemoting.cpp">
+      <Filter>ソース ファイル\Tetris\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Tetris\Model\TetrisScore.cpp">
+      <Filter>ソース ファイル\Tetris\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Tetris\View\TetrisDrawAPI.cpp">
+      <Filter>ソース ファイル\Tetris\View</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Tetris\View\TetrisDrawing.cpp">
+      <Filter>ソース ファイル\Tetris\View</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Tetris\View\TetrisSound.cpp">
+      <Filter>ソース ファイル\Tetris\View</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Tetris\View\TetrisView.cpp">
+      <Filter>ソース ファイル\Tetris\View</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Tetris\Controller\TetrisController.cpp">
+      <Filter>ソース ファイル\Tetris\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Tetris\Controller\TetrisKey.cpp">
+      <Filter>ソース ファイル\Tetris\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\TcpSocket\TcpAcceptWorkerArgs.cpp">
+      <Filter>ソース ファイル\TcpSocket</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\TcpSocket\TcpClientSocket.cpp">
+      <Filter>ソース ファイル\TcpSocket</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\TcpSocket\TcpEventArgs.cpp">
+      <Filter>ソース ファイル\TcpSocket</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\TcpSocket\TcpServerSocket.cpp">
+      <Filter>ソース ファイル\TcpSocket</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Class\FtpClient.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\IniFile.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\MenuPair.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\ShortcutFile.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Stdafx.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\WavPlayer.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\WavPlayerDX.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Window.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\UdpSocket\UdpClientSocket.h">
+      <Filter>ヘッダー ファイル\UdpSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\UdpSocket\UdpEventArgs.h">
+      <Filter>ヘッダー ファイル\UdpSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Tetris\TetrisFieldEventArgs.h">
+      <Filter>ヘッダー ファイル\Tetris</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Tetris\TetrisPackage.h">
+      <Filter>ヘッダー ファイル\Tetris</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Tetris\TetrisRemoteEventArgs.h">
+      <Filter>ヘッダー ファイル\Tetris</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Tetris\TetrisRemotePackage.h">
+      <Filter>ヘッダー ファイル\Tetris</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Tetris\TetrisScoreEventArgs.h">
+      <Filter>ヘッダー ファイル\Tetris</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Tetris\Model\TetrisField.h">
+      <Filter>ヘッダー ファイル\Tetris\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Tetris\Model\TetrisMino.h">
+      <Filter>ヘッダー ファイル\Tetris\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Tetris\Model\TetrisModel.h">
+      <Filter>ヘッダー ファイル\Tetris\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Tetris\Model\TetrisRemoting.h">
+      <Filter>ヘッダー ファイル\Tetris\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Tetris\Model\TetrisScore.h">
+      <Filter>ヘッダー ファイル\Tetris\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Tetris\View\TetrisDrawAPI.h">
+      <Filter>ヘッダー ファイル\Tetris\View</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Tetris\View\TetrisDrawing.h">
+      <Filter>ヘッダー ファイル\Tetris\View</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Tetris\View\TetrisSound.h">
+      <Filter>ヘッダー ファイル\Tetris\View</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Tetris\View\TetrisView.h">
+      <Filter>ヘッダー ファイル\Tetris\View</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Tetris\Controller\TetrisController.h">
+      <Filter>ヘッダー ファイル\Tetris\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Tetris\Controller\TetrisKey.h">
+      <Filter>ヘッダー ファイル\Tetris\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\TcpSocket\TcpAcceptWorkerArgs.h">
+      <Filter>ヘッダー ファイル\TcpSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\TcpSocket\TcpClientSocket.h">
+      <Filter>ヘッダー ファイル\TcpSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\TcpSocket\TcpEventArgs.h">
+      <Filter>ヘッダー ファイル\TcpSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\TcpSocket\TcpServerSocket.h">
+      <Filter>ヘッダー ファイル\TcpSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Tetris\Model\ISerializable.h">
+      <Filter>ヘッダー ファイル\Tetris\Model</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Anaheim.resX">
+      <Filter>リソース ファイル</Filter>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="app.ico">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc">
+      <Filter>リソース ファイル</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

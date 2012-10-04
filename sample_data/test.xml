@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<RX78-2>
+  <Report Section=":SectionA">
+    <Row No.="0">
+      <Col No.="0">1</Col>
+      <Col No.="1">2</Col>
+      <Col No.="2">3</Col>
+    </Row>
+    <Row No.="1">
+      <Col No.="0">4</Col>
+      <Col No.="1">5</Col>
+      <Col No.="2">6</Col>
+    </Row>
+    <Row No.="2">
+      <Col No.="0">7</Col>
+      <Col No.="1">8</Col>
+      <Col No.="2">9</Col>
+    </Row>
+  </Report>
+  <Report Section=":SectionB">
+    <Row No.="0">
+      <Col No.="0">aaa</Col>
+    </Row>
+    <Row No.="1">
+      <Col No.="0">bbb</Col>
+      <Col No.="1">bbb</Col>
+    </Row>
+    <Row No.="2">
+      <Col No.="0">ccc</Col>
+      <Col No.="1">ccc</Col>
+      <Col No.="2">ccc</Col>
+    </Row>
+  </Report>
+</RX78-2>

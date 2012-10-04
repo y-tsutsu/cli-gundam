@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FC2181F4-A298-4989-9790-AD16FA131046}</ProjectGuid>
+    <RootNamespace>RX78_2</RootNamespace>
+    <Keyword>ManagedCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>Pure</CLRSupport>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>Pure</CLRSupport>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\;.\.\;.\Class;.\Class\Arrow;.\Class\Puzzle;.\Class\Report;.\Class\Clock;.\Class\DirectX</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>true</AssemblyDebug>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <CustomBuildStep>
+      <Command>copy app.config "$(TargetPath).config"</Command>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>$(TargetPath).config</Outputs>
+    </CustomBuildStep>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\;.\.\;.\Class;.\Class\Arrow;.\Class\Puzzle;.\Class\Report;.\Class\Clock;.\Class\DirectX</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+      <TargetMachine>MachineX86</TargetMachine>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy app.config "$(TargetPath).config"</Command>
+    </PostBuildEvent>
+    <CustomBuildStep>
+      <Command>copy app.config "$(TargetPath).config"</Command>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>$(TargetPath).config</Outputs>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Data">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Xml">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="Microsoft.DirectX, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.Direct3D, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.Direct3DX, Version=1.0.2909.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Anaheim\Anaheim.vcxproj">
+      <Project>{a757059b-4a6e-46c2-972a-716da89a90a9}</Project>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="Class\ConfigFile.cpp" />
+    <ClCompile Include="Class\DirectX\LightingConfig.cpp" />
+    <ClCompile Include="RX78-2.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Class\Arrow\ArrowDrawing.cpp" />
+    <ClCompile Include="Class\Arrow\ArrowInsectCage.cpp" />
+    <ClCompile Include="Class\Arrow\ArrowUtility.cpp" />
+    <ClCompile Include="Class\Arrow\Insect.cpp" />
+    <ClCompile Include="Class\Puzzle\PicturePuzzle.cpp" />
+    <ClCompile Include="Class\Puzzle\PuzzleBitmap.cpp" />
+    <ClCompile Include="Class\Puzzle\PuzzleDrag.cpp" />
+    <ClCompile Include="Class\Report\ReportBook.cpp" />
+    <ClCompile Include="Class\Report\ReportCommand.cpp" />
+    <ClCompile Include="Class\Report\ReportEditor.cpp" />
+    <ClCompile Include="Class\Report\ReportEventArgs.cpp" />
+    <ClCompile Include="Class\Clock\BinaryClock.cpp" />
+    <ClCompile Include="Class\DirectX\Camera.cpp" />
+    <ClCompile Include="Class\DirectX\Deruderu.cpp" />
+    <ClCompile Include="Class\DirectX\DrawingText.cpp" />
+    <ClCompile Include="Class\DirectX\DrawingWorld.cpp" />
+    <ClCompile Include="Class\DirectX\Floor.cpp" />
+    <ClCompile Include="Class\DirectX\Lighting.cpp" />
+    <ClCompile Include="Class\DirectX\RandomMovingCube.cpp" />
+    <ClCompile Include="Class\DirectX\XYZAxis.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Class\ConfigFile.h" />
+    <ClInclude Include="Class\DirectX\LightingConfig.h" />
+    <ClInclude Include="ExitForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FtpConnectForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MainForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SetTimerForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="VersionForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Class\Arrow\ArrowDrawing.h" />
+    <ClInclude Include="Class\Arrow\ArrowInsectCage.h" />
+    <ClInclude Include="Class\Arrow\ArrowUtility.h" />
+    <ClInclude Include="Class\Arrow\Insect.h" />
+    <ClInclude Include="Class\Puzzle\PicturePuzzle.h" />
+    <ClInclude Include="Class\Puzzle\PuzzleBitmap.h" />
+    <ClInclude Include="Class\Puzzle\PuzzleDrag.h" />
+    <ClInclude Include="Class\Report\ReportBook.h" />
+    <ClInclude Include="Class\Report\ReportCommand.h" />
+    <ClInclude Include="Class\Report\ReportEditor.h" />
+    <ClInclude Include="Class\Report\ReportEventArgs.h" />
+    <ClInclude Include="Class\Clock\BinaryClock.h" />
+    <ClInclude Include="Class\DirectX\Camera.h" />
+    <ClInclude Include="Class\DirectX\Deruderu.h" />
+    <ClInclude Include="Class\DirectX\DrawingText.h" />
+    <ClInclude Include="Class\DirectX\DrawingWorld.h" />
+    <ClInclude Include="Class\DirectX\Floor.h" />
+    <ClInclude Include="Class\DirectX\IDrawable.h" />
+    <ClInclude Include="Class\DirectX\IMovable.h" />
+    <ClInclude Include="Class\DirectX\Lighting.h" />
+    <ClInclude Include="Class\DirectX\RandomMovingCube.h" />
+    <ClInclude Include="Class\DirectX\XYZAxis.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="app.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="RX78_2.resX" />
+    <EmbeddedResource Include="ExitForm.resx">
+      <DependentUpon>ExitForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FtpConnectForm.resx">
+      <DependentUpon>FtpConnectForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resX">
+      <DependentUpon>MainForm.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetTimerForm.resx">
+      <DependentUpon>SetTimerForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VersionForm.resx">
+      <DependentUpon>VersionForm.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

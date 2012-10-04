@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\Arrow">
+      <UniqueIdentifier>{e05fbd6f-29b8-45aa-aa56-542b650e07f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Puzzle">
+      <UniqueIdentifier>{bbcab461-54ce-46b9-b27d-124da967523d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Report">
+      <UniqueIdentifier>{4007448a-68fc-4dac-86b3-39e2bd66baac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Clock">
+      <UniqueIdentifier>{ffa0ee59-789e-4b70-aead-b54870bda5a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\DirectX">
+      <UniqueIdentifier>{88c7185a-fba4-4b85-a125-b3151d61bb91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Arrow">
+      <UniqueIdentifier>{ce8deb2d-d7a3-4c3b-a990-72f3fb16488f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Puzzle">
+      <UniqueIdentifier>{97f1b271-5450-41b3-b17f-620fa6d4bb31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Report">
+      <UniqueIdentifier>{f4b42747-13cd-4101-ba35-c87b169484c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Clock">
+      <UniqueIdentifier>{ebf3bf4b-01a2-42df-a017-f585d20fce10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\DirectX">
+      <UniqueIdentifier>{d19fd761-fd40-4e7c-ae96-755811f42ce1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AssemblyInfo.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\ConfigFile.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="RX78-2.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Arrow\ArrowDrawing.cpp">
+      <Filter>ソース ファイル\Arrow</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Arrow\ArrowInsectCage.cpp">
+      <Filter>ソース ファイル\Arrow</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Arrow\ArrowUtility.cpp">
+      <Filter>ソース ファイル\Arrow</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Arrow\Insect.cpp">
+      <Filter>ソース ファイル\Arrow</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Puzzle\PicturePuzzle.cpp">
+      <Filter>ソース ファイル\Puzzle</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Puzzle\PuzzleBitmap.cpp">
+      <Filter>ソース ファイル\Puzzle</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Puzzle\PuzzleDrag.cpp">
+      <Filter>ソース ファイル\Puzzle</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Report\ReportBook.cpp">
+      <Filter>ソース ファイル\Report</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Report\ReportCommand.cpp">
+      <Filter>ソース ファイル\Report</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Report\ReportEditor.cpp">
+      <Filter>ソース ファイル\Report</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Report\ReportEventArgs.cpp">
+      <Filter>ソース ファイル\Report</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Clock\BinaryClock.cpp">
+      <Filter>ソース ファイル\Clock</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\DirectX\Camera.cpp">
+      <Filter>ソース ファイル\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\DirectX\Deruderu.cpp">
+      <Filter>ソース ファイル\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\DirectX\DrawingText.cpp">
+      <Filter>ソース ファイル\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\DirectX\DrawingWorld.cpp">
+      <Filter>ソース ファイル\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\DirectX\Floor.cpp">
+      <Filter>ソース ファイル\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\DirectX\Lighting.cpp">
+      <Filter>ソース ファイル\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\DirectX\RandomMovingCube.cpp">
+      <Filter>ソース ファイル\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\DirectX\XYZAxis.cpp">
+      <Filter>ソース ファイル\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\DirectX\LightingConfig.cpp">
+      <Filter>ソース ファイル\DirectX</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Class\ConfigFile.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Arrow\ArrowDrawing.h">
+      <Filter>ヘッダー ファイル\Arrow</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Arrow\ArrowInsectCage.h">
+      <Filter>ヘッダー ファイル\Arrow</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Arrow\ArrowUtility.h">
+      <Filter>ヘッダー ファイル\Arrow</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Arrow\Insect.h">
+      <Filter>ヘッダー ファイル\Arrow</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Puzzle\PicturePuzzle.h">
+      <Filter>ヘッダー ファイル\Puzzle</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Puzzle\PuzzleBitmap.h">
+      <Filter>ヘッダー ファイル\Puzzle</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Puzzle\PuzzleDrag.h">
+      <Filter>ヘッダー ファイル\Puzzle</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Report\ReportBook.h">
+      <Filter>ヘッダー ファイル\Report</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Report\ReportCommand.h">
+      <Filter>ヘッダー ファイル\Report</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Report\ReportEditor.h">
+      <Filter>ヘッダー ファイル\Report</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Report\ReportEventArgs.h">
+      <Filter>ヘッダー ファイル\Report</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Clock\BinaryClock.h">
+      <Filter>ヘッダー ファイル\Clock</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\DirectX\Camera.h">
+      <Filter>ヘッダー ファイル\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\DirectX\Deruderu.h">
+      <Filter>ヘッダー ファイル\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\DirectX\DrawingText.h">
+      <Filter>ヘッダー ファイル\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\DirectX\DrawingWorld.h">
+      <Filter>ヘッダー ファイル\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\DirectX\Floor.h">
+      <Filter>ヘッダー ファイル\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\DirectX\IDrawable.h">
+      <Filter>ヘッダー ファイル\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\DirectX\IMovable.h">
+      <Filter>ヘッダー ファイル\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\DirectX\Lighting.h">
+      <Filter>ヘッダー ファイル\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\DirectX\RandomMovingCube.h">
+      <Filter>ヘッダー ファイル\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\DirectX\XYZAxis.h">
+      <Filter>ヘッダー ファイル\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="ExitForm.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="FtpConnectForm.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MainForm.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SetTimerForm.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="VersionForm.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\DirectX\LightingConfig.h">
+      <Filter>ヘッダー ファイル\DirectX</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="app.ico">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc">
+      <Filter>リソース ファイル</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="RX78_2.resX">
+      <Filter>リソース ファイル</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExitForm.resx">
+      <Filter>リソース ファイル</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FtpConnectForm.resx">
+      <Filter>リソース ファイル</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resX">
+      <Filter>リソース ファイル</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetTimerForm.resx">
+      <Filter>リソース ファイル</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VersionForm.resx">
+      <Filter>リソース ファイル</Filter>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+</Project>
