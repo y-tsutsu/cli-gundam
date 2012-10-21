@@ -44,7 +44,7 @@ void RandomMovingCube::Reset()
 }
 // ----------------------------------------------------------------------------------------------------
 
-void RandomMovingCube::Move(Device ^device)
+void RandomMovingCube::Move(Microsoft::DirectX::Direct3D::Device ^device)
 {
 	if (this->count <= 0)
 	{

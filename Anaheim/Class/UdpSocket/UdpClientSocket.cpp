@@ -25,7 +25,7 @@ void UdpClientSocket::ReceiveWorkerDoWork(System::Object ^sender, System::Compon
 	{
 		while (true)
 		{
-			IPEndPoint^ endPoint;
+			IPEndPoint^ endPoint = gcnew IPEndPoint(IPAddress::Any, 0);
 			array<Byte>^ buff = this->client->Receive(endPoint);
 			String^ message = this->encoding->GetString(buff);
 			UdpEventArgs^ args = gcnew UdpEventArgs(endPoint, buff, this->encoding);
@@ -46,9 +46,30 @@ void UdpClientSocket::ReceiveWorkerProgressChanged(System::Object ^sender, Syste
 }
 // ----------------------------------------------------------------------------------------------------
 
+bool UdpClientSocket::IsEnabledIPAddress(System::Net::IPAddress ^ipAddress)
+{
+	array<IPAddress^>^ addresses = System::Net::Dns::GetHostAddresses(System::Net::Dns::GetHostName());
+	for each (IPAddress^ address in addresses)
+	{
+		if (address->Equals(ipAddress))
+		{
+			return true;
+		}
+	}
+
+	if (ipAddress->ToString()->Equals("127.0.0.1"))
+	{
+		return true;
+	}
+
+	return false;
+}
+// ----------------------------------------------------------------------------------------------------
+
 bool UdpClientSocket::Start(System::Net::IPEndPoint ^endPoint)
 {
 	if (this->connected) return false;
+	if (!this->IsEnabledIPAddress(endPoint->Address)) return false;
 
 	try
 	{

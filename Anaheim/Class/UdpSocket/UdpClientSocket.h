@@ -39,6 +39,8 @@ namespace Anaheim
 			void ReceiveWorkerDoWork(System::Object^ sender, System::ComponentModel::DoWorkEventArgs^ e);
 			void ReceiveWorkerProgressChanged(System::Object^ sender, System::ComponentModel::ProgressChangedEventArgs^ e);
 
+			bool IsEnabledIPAddress(IPAddress^ ipAddress);
+
 		public:
 			/// スタート
 			bool Start(IPEndPoint^ endPoint);

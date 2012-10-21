@@ -73,18 +73,18 @@ void TcpServerSocket::DisConnectedClient(System::Object ^sender, Anaheim::TcpSoc
 }
 // ----------------------------------------------------------------------------------------------------
 
-bool TcpServerSocket::IsEnabledEndPoint(System::Net::IPEndPoint ^endPoint)
+bool TcpServerSocket::IsEnabledIPAddress(System::Net::IPAddress ^ipAddress)
 {
 	array<IPAddress^>^ addresses = System::Net::Dns::GetHostAddresses(System::Net::Dns::GetHostName());
 	for each (IPAddress^ address in addresses)
 	{
-		if (address->Equals(endPoint->Address))
+		if (address->Equals(ipAddress))
 		{
 			return true;
 		}
 	}
 
-	if (endPoint->Address->ToString()->Equals("127.0.0.1"))
+	if (ipAddress->ToString()->Equals("127.0.0.1"))
 	{
 		return true;
 	}
@@ -107,7 +107,7 @@ bool TcpServerSocket::Initialize(System::Net::IPEndPoint ^endPoint)
 {
 	try
 	{
-		if (!this->IsEnabledEndPoint(endPoint)) return false;
+		if (!this->IsEnabledIPAddress(endPoint->Address)) return false;
 
 		this->Stop();
 		this->server = gcnew TcpListener(endPoint);
@@ -167,16 +167,14 @@ bool TcpServerSocket::DisConnect(System::Net::IPEndPoint ^endPoint)
 
 bool TcpServerSocket::SendMessage(System::String ^message, System::Net::IPEndPoint ^endPoint)
 {
-	bool result = false;
 	for each (TcpClientSocket^ client in this->clients)
 	{
 		if (client->RemoteEndPoint->Equals(endPoint))
 		{
-			result = client->SendMessage(message);
-			break;
+			return client->SendMessage(message);
 		}
 	}
-	return result;
+	return false;
 }
 // ----------------------------------------------------------------------------------------------------
 

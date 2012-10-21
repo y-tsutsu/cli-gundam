@@ -45,7 +45,7 @@ namespace Anaheim
 			void ReceivedClient(System::Object^ sender, TcpEventArgs^ e);
 			void DisConnectedClient(System::Object^ sender, TcpEventArgs^ e);
 
-			bool IsEnabledEndPoint(IPEndPoint^ endPoint);
+			bool IsEnabledIPAddress(IPAddress^ ipAddress);
 			void SetEncoding(System::Text::Encoding^ encoding);
 
 		public:
