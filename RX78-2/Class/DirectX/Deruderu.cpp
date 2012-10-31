@@ -32,6 +32,7 @@ bool Deruderu::Initialize(Microsoft::DirectX::Direct3D::Device ^device)
 	array<Byte>^ bytes = safe_cast<array<Byte>^>(resources->GetObject("DeruderuXFile"));
 	MemoryStream^ stream = gcnew MemoryStream(bytes);
 	this->mesh = Mesh::FromStream(stream, MeshFlags::Managed, device, this->materials);
+	stream->Close();
 
 	if ((this->mesh->VertexFormat & VertexFormats::Normal) == VertexFormats::None)
 	{
