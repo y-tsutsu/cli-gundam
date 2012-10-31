@@ -27,7 +27,6 @@ void UdpClientSocket::ReceiveWorkerDoWork(System::Object ^sender, System::Compon
 		{
 			IPEndPoint^ endPoint = gcnew IPEndPoint(IPAddress::Any, 0);
 			array<Byte>^ buff = this->client->Receive(endPoint);
-			String^ message = this->encoding->GetString(buff);
 			UdpEventArgs^ args = gcnew UdpEventArgs(endPoint, buff, this->encoding);
 			this->receiveWorker->ReportProgress(0, args);
 		}
