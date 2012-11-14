@@ -14,6 +14,7 @@ TetrisModel::TetrisModel(Anaheim::Tetris::TetrisField ^field, System::Collection
 	this->minos = minos;
 	this->score = score;
 	this->remoting = gcnew TetrisRemoting();
+	this->remoteEndPoint = nullptr;
 	this->nextCount = nextCount;
 }
 // ----------------------------------------------------------------------------------------------------
@@ -92,7 +93,7 @@ void TetrisModel::SendRemote()
 {
 	if (this->minos->Count == 0) return;
 
-	this->remoting->Send(this->field, this->minos[0], gcnew IPEndPoint(IPAddress::Parse("127.0.0.1"), 55005));
+	this->remoting->Send(this->field, this->minos[0], this->remoteEndPoint);
 }
 // ----------------------------------------------------------------------------------------------------
 
@@ -173,9 +174,10 @@ bool TetrisModel::HardDrop()
 }
 // ----------------------------------------------------------------------------------------------------
 
-bool TetrisModel::StartRemote()
+bool TetrisModel::StartRemote(System::Net::IPEndPoint ^localEndPoint, System::Net::IPEndPoint ^remoteEndPoint)
 {
-	return this->remoting->Start(gcnew IPEndPoint(IPAddress::Parse("127.0.0.1"), 55000));
+	this->remoteEndPoint = remoteEndPoint;
+	return this->remoting->Start(localEndPoint);
 }
 // ----------------------------------------------------------------------------------------------------
 

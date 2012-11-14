@@ -23,7 +23,7 @@ namespace RX78_2
 	/// </summary>
 	public ref class FtpConnectForm : public System::Windows::Forms::Form
 	{
-	private: ConfigFile^ config;		///< コンフィグファイル
+	private: ConfigFile^ config;	///< コンフィグファイル
 
 	private: System::Windows::Forms::Button^  buttonOk;
 	private: System::Windows::Forms::Button^  buttonCancel;

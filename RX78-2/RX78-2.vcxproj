@@ -183,6 +183,7 @@
     <ClCompile Include="Class\DirectX\Lighting.cpp" />
     <ClCompile Include="Class\DirectX\RandomMovingCube.cpp" />
     <ClCompile Include="Class\DirectX\XYZAxis.cpp" />
+    <ClCompile Include="TetrisConnectForm.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Class\ConfigFile.h" />
@@ -201,6 +202,9 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="TetrisConnectForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="VersionForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -247,6 +251,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SetTimerForm.resx">
       <DependentUpon>SetTimerForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TetrisConnectForm.resx">
+      <DependentUpon>TetrisConnectForm.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VersionForm.resx">
       <DependentUpon>VersionForm.h</DependentUpon>

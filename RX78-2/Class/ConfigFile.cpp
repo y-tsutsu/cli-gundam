@@ -506,6 +506,23 @@ void ConfigFile::SetTetrisRemoteEnabled(bool enabled)
 }
 // ----------------------------------------------------------------------------------------------------
 
+IPEndPoint^ ConfigFile::GetTetrisIPEndPoint()
+{
+	XmlElement^ ele = this->GetTetrisElement();
+	String^ ip = this->GetValue(ele, "IPAddress", "127.0.0.1");
+	String^ port = this->GetValue(ele, "Port", "50100");
+	return gcnew IPEndPoint(IPAddress::Parse(ip), int::Parse(port));
+}
+// ----------------------------------------------------------------------------------------------------
+
+void ConfigFile::SetTetrisIPEndPoint(System::Net::IPEndPoint ^endPoint)
+{
+	XmlElement^ ele = this->GetTetrisElement();
+	this->SetValue(ele, "IPAddress", endPoint->Address->ToString());
+	this->SetValue(ele, "Port", endPoint->Port.ToString());
+}
+// ----------------------------------------------------------------------------------------------------
+
 bool ConfigFile::GetDirectXXYZAxisON()
 {
 	XmlElement^ ele = this->GetDirectXElement();

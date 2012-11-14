@@ -12,6 +12,7 @@ namespace Anaheim
 		{
 			using namespace System;
 			using namespace System::Collections::Generic;
+			using namespace System::Net;
 
 			ref class TetrisField;
 			ref class TetrisMino;
@@ -30,6 +31,7 @@ namespace Anaheim
 				List<TetrisMino^>^ minos;
 				TetrisScore^ score;
 				TetrisRemoting^ remoting;
+				IPEndPoint^ remoteEndPoint;
 				int nextCount;
 
 			/**
@@ -68,7 +70,7 @@ namespace Anaheim
 				/// ハードドロップ
 				bool HardDrop();
 				/// リモートスタート
-				bool StartRemote();
+				bool StartRemote(IPEndPoint^ localEndPoint, IPEndPoint^ remoteEndPoint);
 				/// リモートストップ
 				bool StopRemote();
 

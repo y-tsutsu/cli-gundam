@@ -120,6 +120,9 @@
     <ClCompile Include="Class\DirectX\LightingConfig.cpp">
       <Filter>ソース ファイル\DirectX</Filter>
     </ClCompile>
+    <ClCompile Include="TetrisConnectForm.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Class\ConfigFile.h">
@@ -214,6 +217,9 @@
     </ClInclude>
     <ClInclude Include="Class\DirectX\LightingConfig.h">
       <Filter>ヘッダー ファイル\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="TetrisConnectForm.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

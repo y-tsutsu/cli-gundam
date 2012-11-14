@@ -4,6 +4,7 @@
 #include "ExitForm.h"
 #include "FtpConnectForm.h"
 #include "SetTimerForm.h"
+#include "TetrisConnectForm.h"
 #include "ConfigFile.h"
 #include "ReportBook.h"
 #include "ReportEditor.h"
@@ -3209,25 +3210,31 @@ namespace RX78_2
 			 {
 				 this->tabControl->SelectedTab = this->tabTetris;
 
+				 bool isRunning = this->tetris->Controller->IsRunning;
+				 if (isRunning)
+				 {
+					 this->g_buttonStart->PerformClick();
+				 }
+
 				 if (this->menuRemote->Checked)
 				 {
 					 this->menuRemote->Checked = false;
 				 }
 				 else
 				 {
-					 this->menuRemote->Checked = true;
-
-					 String^ filename = System::Windows::Forms::Application::StartupPath + "\\RX77-2.exe";
-					 if (System::IO::File::Exists(filename))
+					 TetrisConnectForm^ form = gcnew TetrisConnectForm(this->config);
+					 if (form->ShowDialog() == System::Windows::Forms::DialogResult::OK)
 					 {
-						 System::Diagnostics::Process::Start(filename);
+						 this->menuRemote->Checked = true;
 					 }
-					 else
-					 {
-						 System::Windows::Forms::MessageBox::Show("TETRiSリモート表示の起動に失敗しました！", this->Text, MessageBoxButtons::OK, MessageBoxIcon::Error);
-					 }
+					 delete form;
 				 }
 				 this->config->SetTetrisRemoteEnabled(this->menuRemote->Checked);
+
+				 if (isRunning)
+				 {
+					 this->g_buttonStart->PerformClick();
+				 }
 			 }
 			 // ----------------------------------------------------------------------------------------------------
 
@@ -3235,8 +3242,20 @@ namespace RX78_2
 			 {
 				 if (this->menuRemote->Checked)
 				 {
-					 if (!this->tetris->Controller->StartRemote())
+					 IPEndPoint^ localEndPoint = gcnew IPEndPoint(IPAddress::Parse("127.0.0.1"), 50000);
+					 array<IPAddress^>^ addresses = Dns::GetHostAddresses(Dns::GetHostName());
+					 for each (IPAddress^ address in addresses)
 					 {
+						 if (address->ToString()->IndexOf("192.168.") != -1)
+						 {
+							 localEndPoint = gcnew IPEndPoint(address, 50000);
+							 break;
+						 }
+					 }
+					 IPEndPoint^ remoteEndPoint = this->config->GetTetrisIPEndPoint();
+					 if (!this->tetris->Controller->StartRemote(localEndPoint, remoteEndPoint))
+					 {
+						 System::Windows::Forms::MessageBox::Show("TETRiSのリモート設定に失敗しました！", this->Text, MessageBoxButtons::OK, MessageBoxIcon::Error);
 						 this->menuRemote->Checked = false;
 					 }
 				 }

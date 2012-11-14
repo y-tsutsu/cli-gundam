@@ -144,7 +144,11 @@ namespace RX78_2
 		bool GetTetrisRemoteEnabled();
 		/// リモート有効保存
 		void SetTetrisRemoteEnabled(bool enabled);
-
+		/// リモートIPアドレス，ポート読み込み
+		IPEndPoint^ GetTetrisIPEndPoint();
+		/// リモートIPアドレス，ポート保存
+		void SetTetrisIPEndPoint(IPEndPoint^ endPoint);
+		
 
 		/// DirectX
 

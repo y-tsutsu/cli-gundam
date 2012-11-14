@@ -120,9 +120,9 @@ bool TetrisController::Pause()
 }
 // ----------------------------------------------------------------------------------------------------
 
-bool TetrisController::StartRemote()
+bool TetrisController::StartRemote(System::Net::IPEndPoint ^localEndPoint, System::Net::IPEndPoint ^remoteEndPoint)
 {
-	return this->model->StartRemote();
+	return this->model->StartRemote(localEndPoint, remoteEndPoint);
 }
 // ----------------------------------------------------------------------------------------------------
 

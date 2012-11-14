@@ -49,9 +49,9 @@ bool TetrisRemotePackage::Draw()
 }
 // ----------------------------------------------------------------------------------------------------
 
-bool TetrisRemotePackage::StartRemote()
+bool TetrisRemotePackage::StartRemote(System::Net::IPEndPoint ^localEndPoint)
 {
-	return this->remoting->Start(gcnew IPEndPoint(IPAddress::Parse("127.0.0.1"), 55005));
+	return this->remoting->Start(localEndPoint);
 }
 // ----------------------------------------------------------------------------------------------------
 

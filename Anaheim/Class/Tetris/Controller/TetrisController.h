@@ -22,6 +22,7 @@ namespace Anaheim
 		{
 			using namespace System;
 			using namespace System::Windows::Forms;
+			using namespace System::Net;
 			using namespace Model;
 			using namespace View;
 
@@ -49,7 +50,7 @@ namespace Anaheim
 				/// 一時停止
 				virtual bool Pause() abstract;
 				/// リモートスタート
-				virtual bool StartRemote() abstract;
+				virtual bool StartRemote(IPEndPoint^ localEndPoint, IPEndPoint^ remoteEndPoint) abstract;
 				/// リモートストップ
 				virtual bool StopRemote() abstract;
 
@@ -116,7 +117,7 @@ namespace Anaheim
 				/// 一時停止
 				virtual bool Pause() override;
 				/// リモートスタート
-				virtual bool StartRemote() override;
+				virtual bool StartRemote(IPEndPoint^ localEndPoint, IPEndPoint^ remoteEndPoint) override;
 				/// リモートストップ
 				virtual bool StopRemote() override;
 

@@ -19,6 +19,7 @@ namespace Anaheim
 
 		using namespace System;
 		using namespace System::Windows::Forms;
+		using namespace System::Net;
 		using namespace Model;
 		using namespace View;
 
@@ -53,7 +54,7 @@ namespace Anaheim
 
 		public:
 			/// リモートスタート
-			bool StartRemote();
+			bool StartRemote(IPEndPoint^ localEndPoint);
 			/// リモートストップ
 			bool StopRemote();
 		};

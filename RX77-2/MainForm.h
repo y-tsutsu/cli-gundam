@@ -106,8 +106,18 @@ namespace RX77_2
 				 this->config = gcnew ConfigFile(filename);
 				 this->config->LoadFormSizeAndLocation(this);
 
+				 IPEndPoint^ localEndPoint = gcnew IPEndPoint(IPAddress::Parse("127.0.0.1"), 50010);
+				 array<IPAddress^>^ addresses = Dns::GetHostAddresses(Dns::GetHostName());
+				 for each (IPAddress^ address in addresses)
+				 {
+					 if (address->ToString()->IndexOf("192.168.") != -1)
+					 {
+						 localEndPoint = gcnew IPEndPoint(address, 50010);
+						 break;
+					 }
+				 }
 				 this->tetris = gcnew TetrisRemotePackage(this->panelCanvas);
-				 this->tetris->StartRemote();
+				 this->tetris->StartRemote(localEndPoint);
 			 }
 			 // ----------------------------------------------------------------------------------------------------
 
