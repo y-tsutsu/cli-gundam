@@ -77,7 +77,7 @@ namespace RX78_2 {
 			this->labelTitle->Location = System::Drawing::Point(12, 9);
 			this->labelTitle->Name = L"labelTitle";
 			this->labelTitle->Size = System::Drawing::Size(75, 12);
-			this->labelTitle->TabIndex = 0;
+			this->labelTitle->TabIndex = 4;
 			this->labelTitle->Text = L"リモート先設定";
 			// 
 			// labelIpAddress
@@ -86,7 +86,7 @@ namespace RX78_2 {
 			this->labelIpAddress->Location = System::Drawing::Point(36, 39);
 			this->labelIpAddress->Name = L"labelIpAddress";
 			this->labelIpAddress->Size = System::Drawing::Size(51, 12);
-			this->labelIpAddress->TabIndex = 1;
+			this->labelIpAddress->TabIndex = 5;
 			this->labelIpAddress->Text = L"IPアドレス";
 			// 
 			// labelPortNo
@@ -95,7 +95,7 @@ namespace RX78_2 {
 			this->labelPortNo->Location = System::Drawing::Point(38, 64);
 			this->labelPortNo->Name = L"labelPortNo";
 			this->labelPortNo->Size = System::Drawing::Size(49, 12);
-			this->labelPortNo->TabIndex = 2;
+			this->labelPortNo->TabIndex = 6;
 			this->labelPortNo->Text = L"ポートNo.";
 			// 
 			// textPortNo
@@ -103,14 +103,14 @@ namespace RX78_2 {
 			this->textPortNo->Location = System::Drawing::Point(93, 61);
 			this->textPortNo->Name = L"textPortNo";
 			this->textPortNo->Size = System::Drawing::Size(149, 19);
-			this->textPortNo->TabIndex = 3;
+			this->textPortNo->TabIndex = 1;
 			// 
 			// textIpAddress
 			// 
 			this->textIpAddress->Location = System::Drawing::Point(93, 36);
 			this->textIpAddress->Name = L"textIpAddress";
 			this->textIpAddress->Size = System::Drawing::Size(149, 19);
-			this->textIpAddress->TabIndex = 4;
+			this->textIpAddress->TabIndex = 0;
 			// 
 			// buttonOk
 			// 
@@ -118,7 +118,7 @@ namespace RX78_2 {
 			this->buttonOk->Location = System::Drawing::Point(35, 97);
 			this->buttonOk->Name = L"buttonOk";
 			this->buttonOk->Size = System::Drawing::Size(75, 23);
-			this->buttonOk->TabIndex = 5;
+			this->buttonOk->TabIndex = 2;
 			this->buttonOk->Text = L"OK";
 			this->buttonOk->UseVisualStyleBackColor = true;
 			this->buttonOk->Click += gcnew System::EventHandler(this, &TetrisConnectForm::buttonOk_Click);
@@ -129,7 +129,7 @@ namespace RX78_2 {
 			this->buttonCancel->Location = System::Drawing::Point(145, 97);
 			this->buttonCancel->Name = L"buttonCancel";
 			this->buttonCancel->Size = System::Drawing::Size(75, 23);
-			this->buttonCancel->TabIndex = 6;
+			this->buttonCancel->TabIndex = 3;
 			this->buttonCancel->Text = L"キャンセル";
 			this->buttonCancel->UseVisualStyleBackColor = true;
 			// 
