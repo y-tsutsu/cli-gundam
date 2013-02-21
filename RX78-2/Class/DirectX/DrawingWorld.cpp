@@ -80,7 +80,7 @@ bool DrawingWorld::CreateInstance()
 	this->movingItems->Add(this->deruderu);
 
 	this->drawingItems->Add(this->lighting);
-	this->drawingItems->Add(floor);
+	this->drawingItems->Add(this->floor);
 	this->drawingItems->Add(this->deruderu);
 	this->drawingItems->Add(this->xyzAxis);
 
