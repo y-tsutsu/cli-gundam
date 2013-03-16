@@ -14,7 +14,7 @@ namespace RX78_2
 		/**
 		 * XYZ軸
 		 */
-		ref class XYZAxis : public IDrawable
+		ref class XYZAxis : IDrawable
 		{
 		/**
 		 * フィールド

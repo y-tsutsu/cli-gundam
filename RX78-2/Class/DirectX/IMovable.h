@@ -17,7 +17,7 @@ namespace RX78_2
 		 */
 		public:
 			/// ˆÚ“®
-			virtual void Move(Device^ device) abstract;
+			void Move(Device^ device) abstract;
 		};
 		// ----------------------------------------------------------------------------------------------------
 	}

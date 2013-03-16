@@ -18,7 +18,7 @@ namespace RX78_2
 		/**
 		 * ランダム移動キューブ
 		 */
-		ref class Deruderu : public IMovable, IDrawable
+		ref class Deruderu : IMovable, IDrawable
 		{
 		/**
 		 * フィールド

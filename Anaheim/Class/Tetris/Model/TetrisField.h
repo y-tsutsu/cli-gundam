@@ -18,7 +18,7 @@ namespace Anaheim
 			/**
 			 * テトリス フィールド行
 			 */
-			public ref class TetrisFieldRow : public ISerializable
+			public ref class TetrisFieldRow : ISerializable
 			{
 			/**
 			 * フィールド
@@ -64,7 +64,7 @@ namespace Anaheim
 			/**
 			 * テトリス フィールド
 			 */
-			public ref class TetrisField : public ISerializable
+			public ref class TetrisField : ISerializable
 			{
 			/**
 			 * フィールド

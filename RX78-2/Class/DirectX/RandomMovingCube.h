@@ -15,7 +15,7 @@ namespace RX78_2
 		/**
 		 * ランダム移動キューブ
 		 */
-		ref class RandomMovingCube : public IMovable, IDrawable
+		ref class RandomMovingCube : IMovable, IDrawable
 		{
 		/**
 		 * フィールド

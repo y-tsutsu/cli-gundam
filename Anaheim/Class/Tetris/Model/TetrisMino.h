@@ -17,7 +17,7 @@ namespace Anaheim
 			/**
 			 * テトリスミノ
 			 */
-			public ref class TetrisMino abstract : public ISerializable
+			public ref class TetrisMino abstract : ISerializable
 			{
 			/**
 			 * enum class

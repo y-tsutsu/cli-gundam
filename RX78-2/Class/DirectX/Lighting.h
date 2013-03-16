@@ -15,7 +15,7 @@ namespace RX78_2
 		/**
 		 * 照明
 		 */
-		ref class Lighting : public IMovable, IDrawable
+		ref class Lighting : IMovable, IDrawable
 		{
 		/**
 		 * フィールド

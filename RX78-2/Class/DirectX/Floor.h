@@ -14,7 +14,7 @@ namespace RX78_2
 		/**
 		 * 床
 		 */
-		ref class Floor : public IDrawable
+		ref class Floor : IDrawable
 		{
 		/**
 		 * フィールド

@@ -21,26 +21,26 @@ namespace Anaheim
 			 */
 			public:
 				/// 描画開始
-				virtual void BeginDraw() abstract;
+				void BeginDraw() abstract;
 				/// 直線描画
-				virtual void DrawLine(Color color, float width, PointF point1, PointF point2) abstract;
+				void DrawLine(Color color, float width, PointF point1, PointF point2) abstract;
 				/// 四角形描画
-				virtual void DrawRectangle(Color color, float width, PointF point, SizeF size) abstract;
+				void DrawRectangle(Color color, float width, PointF point, SizeF size) abstract;
 				/// 四角形塗りつぶし
-				virtual void FillRectangle(Color color, PointF point, SizeF size) abstract;
+				void FillRectangle(Color color, PointF point, SizeF size) abstract;
 				/// 四角形塗りつぶし（グラデーション）
-				virtual void FillRectangleGradation(Color color1, Color color2, PointF point, SizeF size) abstract;
+				void FillRectangleGradation(Color color1, Color color2, PointF point, SizeF size) abstract;
 				/// 描画終了
-				virtual void EndDraw() abstract;
+				void EndDraw() abstract;
 				/// クリア
-				virtual void Clear() abstract;
+				void Clear() abstract;
 			};
 			// ----------------------------------------------------------------------------------------------------
 
 			/**
 			 * テトリス描画API
 			 */
-			ref class GraphicsTetrisDrawAPI : public ITetrisDrawAPI
+			ref class GraphicsTetrisDrawAPI : ITetrisDrawAPI
 			{
 			/**
 			 * フィールド

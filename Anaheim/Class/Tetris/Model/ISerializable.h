@@ -18,9 +18,9 @@ namespace Anaheim
 			 */
 			public:
 				/// シリアライズ
-				virtual array<Byte>^ Serialize() abstract;
+				array<Byte>^ Serialize() abstract;
 				/// デシリアライズ
-				virtual void Deserialize(array<Byte>^ bytes) abstract;
+				void Deserialize(array<Byte>^ bytes) abstract;
 			};
 			// ----------------------------------------------------------------------------------------------------
 		}

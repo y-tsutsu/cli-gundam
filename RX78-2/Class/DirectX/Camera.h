@@ -15,7 +15,7 @@ namespace RX78_2
 		/**
 		 * カメラ
 		 */
-		ref class Camera : public IMovable
+		ref class Camera : IMovable
 		{
 		/**
 		 * フィールド

@@ -19,9 +19,9 @@ namespace RX78_2
 		 */
 		public:
 			/// •`‰æ
-			virtual void Draw(Device^ device, LightingConfig^ lightingConfig) abstract;
+			void Draw(Device^ device, LightingConfig^ lightingConfig) abstract;
 			/// ‰e•`‰æ
-			virtual void DrawShadow(Device^ device, LightingConfig^ lightingConfig, Plane plane) abstract;
+			void DrawShadow(Device^ device, LightingConfig^ lightingConfig, Plane plane) abstract;
 		};
 		// ----------------------------------------------------------------------------------------------------
 	}
