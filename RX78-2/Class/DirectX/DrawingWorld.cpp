@@ -69,7 +69,7 @@ bool DrawingWorld::CreateInstance()
 	}
 
 	this->lighting = gcnew Lighting(this->device, 12.0f, 0, Color::Gold);
-	this->camera = gcnew Camera(this->device, 20.0f);
+	this->camera = gcnew Camera(this->device, 20.0f, 300.0f, 30.0f);
 	this->floor = gcnew Floor(this->device, 10.0f, Color::DarkGreen, Color::DarkGray);
 	this->deruderu = gcnew Deruderu(this->device);
 	this->text = gcnew DrawingText(this->device, 12, "‚l‚r ƒSƒVƒbƒN");
@@ -149,24 +149,32 @@ void DrawingWorld::Draw()
 
 void DrawingWorld::ControlKeyDown(System::Object ^sender, System::Windows::Forms::KeyEventArgs ^e)
 {
+	if (this->deruderu == nullptr) return;
+
 	this->deruderu->InputKeyDown(e->KeyCode);
 }
 // ----------------------------------------------------------------------------------------------------
 
 void DrawingWorld::ControlKeyUp(System::Object ^sender, System::Windows::Forms::KeyEventArgs ^e)
 {
+	if (this->deruderu == nullptr) return;
+
 	this->deruderu->InputKeyUp(e->KeyCode);
 }
 // ----------------------------------------------------------------------------------------------------
 
 void DrawingWorld::ControlMouseMove(System::Object ^sender, System::Windows::Forms::MouseEventArgs ^e)
 {
+	if (this->camera == nullptr) return;
+
 	this->camera->InputMouseMove(e->Location, e->Button);
 }
 // ----------------------------------------------------------------------------------------------------
 
 void DrawingWorld::ControlMouseWheel(System::Object ^sender, System::Windows::Forms::MouseEventArgs ^e)
 {
+	if (this->camera == nullptr) return;
+
 	this->camera->InputMouseWheel(e->Delta);
 }
 // ----------------------------------------------------------------------------------------------------

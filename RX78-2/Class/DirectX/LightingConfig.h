@@ -10,9 +10,9 @@ namespace RX78_2
 		using namespace Microsoft::DirectX::Direct3D;
 
 		/**
-		 * 証明設定
+		 * 照明設定
 		 */
-		ref  class LightingConfig
+		ref class LightingConfig
 		{
 		/**
 		 * フィールド

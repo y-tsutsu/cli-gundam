@@ -24,14 +24,14 @@ namespace RX78_2
 			float radius;
 			float locationTheta;
 			float locationPhi;
-			float targetY;
 			Point oldMouseLocation;
+			literal float TARGET_Y = 2.0f;
 
 		/**
 		 * コンストラクタ
 		 */
 		public:
-			Camera(Device^ device, float radius);
+			Camera(Device^ device, float radius, float theta, float phi);
 
 		/**
 		 * メソッド
