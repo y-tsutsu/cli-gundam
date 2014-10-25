@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Express 2012 for Windows Desktop
+# Visual Studio Express 2013 for Windows Desktop
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RX78-2", "RX78-2\RX78-2.vcxproj", "{FC2181F4-A298-4989-9790-AD16FA131046}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Anaheim", "Anaheim\Anaheim.vcxproj", "{A757059B-4A6E-46C2-972A-716DA89A90A9}"

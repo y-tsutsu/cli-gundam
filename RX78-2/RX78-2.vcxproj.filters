@@ -251,6 +251,9 @@
     <EmbeddedResource Include="VersionForm.resx">
       <Filter>リソース ファイル</Filter>
     </EmbeddedResource>
+    <EmbeddedResource Include="TetrisConnectForm.resx">
+      <Filter>リソース ファイル</Filter>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
