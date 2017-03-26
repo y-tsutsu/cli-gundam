@@ -32,3 +32,4 @@ ipch
 doxygen
 *.sdf
 GUNDAM.VC.db
+.vs/
